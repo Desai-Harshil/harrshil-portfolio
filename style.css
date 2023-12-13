@@ -1,0 +1,222 @@
+*{
+    font-family: "inter";
+    margin: 0;
+    padding: 0 15px;
+    /* color: white; */
+
+}
+.container{
+    padding: 0px 15px;
+    margin: 0 auto;
+    /* width: 1200px; */
+}
+body{
+    background-color: #17202A;
+
+}
+.main-in{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 0;
+}
+.main-in .header-logo h2{
+  color: white;
+}
+/* .main-div .header{
+  display: flex;
+  align-items: center;
+} */
+.main-div .login a{
+  color: white;
+}
+.header .login a{
+  text-decoration: none;
+  opacity: 60%;
+}
+.main-div .header-in a{
+    text-decoration: none;
+    color: white;
+    padding: 6px 20px;
+    position: relative;
+    opacity: 60%;
+}
+.main-div .login a:hover::after{
+  width: 0px !important;
+}
+.main-div .header-in a:hover{
+  opacity: 100%;
+}
+.main-div .header-in a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(311deg, rgba(23, 32, 42) 0%, rgba(23, 32, 42) 0%, rgba(240, 178, 122) 100%);
+    transition: 0.5s;
+}
+.main-div .header-in a:hover::after{
+  width: 100%;
+}
+.main-div .header-in{
+    display: flex;
+    align-items: center;
+}
+
+
+/* Responsive menubar */
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  #opn-btn{
+    display: none;
+    color: white;
+  }
+
+  .my-about .about-in{
+    display: flex;
+    align-items: center;
+  }
+  #font-size{
+    text-align: center;
+  }
+  #font-size .p1{
+    font-size: 50px;
+    /* padding: 15px 0px; */
+    color: #F0B27A;
+    font-weight: 600;
+  }
+  .card-title .p2{
+    font-size: 38px;
+    color: #F0B27A;
+    padding: 15px 0px;
+    font-weight: 500;
+
+  }
+  .card-text .p3{
+    color: white;
+    line-height: 25px;
+    opacity: 80%;
+    /* color: lightgray; */
+  }
+  .card-img-top{
+    /* border-radius:30% 70% 70% 30% / 30% 30% 70% 70% ; */
+    /* border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; */
+    /* background: -webkit-linear-gradient(
+    to right,
+    #3c1053,
+    #ad5389
+);
+background: linear-gradient(
+    to right,
+    #3c1053,
+    #ad5389
+); */
+
+
+ background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+ animation: morph 8s ease-in-out infinite;
+ border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+ height: 400px;
+ transition: all 1s ease-in-out;
+ width: 400px;
+ z-index: 5;
+  }
+@keyframes morph {
+ 0% {
+           border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+           background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+   } 
+   
+   50% {
+           border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+           background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+   }
+ 
+   100% {
+       border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+       background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+   } 
+} 
+
+.social{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.social a{
+  width: 35px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  font-size: 25px;
+  transition: 0.1s;
+  color: white;
+}
+.social a{
+  text-decoration: none;
+}
+.social .whatsapp a:hover{
+  opacity: 60%;
+  color:  #8ae778;
+}
+.social .insta a:hover{
+  opacity: 60%;
+  color: red;
+}
+.social .facebook a:hover{
+  opacity: 60%;
+  color: blue;
+}

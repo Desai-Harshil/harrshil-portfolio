@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+        integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Harrshill Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="main-div">
+            <div class="container">
+                <div class="main-in">
+                    <div class="header-logo">
+                        <!-- <img src="Icon.png" alt=""> -->
+                        <h2>My Portfolio</h2>
+                    </div>
+                    <div class="header">
+                        <div class="header-in">
+                            <a href="#">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Education</a>
+                            <a href="#">Skill</a>
+                            <a href="#">Contact</a>
+                            <div class="login">
+                                <a href="#"><i class="fa fa-lock fa-beat"></i>Login</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- REsponsive menubar -->
+
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="#">About</a>
+                            <a href="#">Services</a>
+                            <a href="#">Clients</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                    <span style="font-size:30px;cursor:pointer" id="opn-btn" onclick="openNav()">&#9776;</span>
+
+                    <script>
+                        function openNav() {
+                            document.getElementById("myNav").style.width = "100%";
+                        }
+
+                        function closeNav() {
+                            document.getElementById("myNav").style.width = "0%";
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- <div class="my-about"> -->
+        <div class="container">
+            <div class="about-in">
+
+                <div class="row" id="row-wrap">
+                    <div class="col-md-6" id="pic-padding">
+                        <div class="row">
+
+                            <div class="card" style="width: 400px; padding: 20px 0;" id="photo-width">
+                                <img src="car.jpeg" class="card-img-top" style="width: 100%; height: auto;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="font-size">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <p class="p1">Hello Im... Harrshill</p>
+                                <p class="p2"> And I'm  Full Stack Web Developere</p>
+                                <div class="card-text">
+                                    <p class="p3">Transitioned from IT with a passion for coding and web development.
+                                        Proficient in C, C++, HTML, CSS, and Bootstrap. Skilled in crafting responsive
+                                        E-Commerce websites and enhancing user experience through jQuery and JavaScript.
+                                        Excited about creating intuitive UI components.
+                                        Open to new opportunities in Full-Stack Development, Web Design, and more.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="social">
+                <div class="whatsapp">
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div class="insta">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="facebook">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
